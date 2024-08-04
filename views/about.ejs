@@ -1,0 +1,114 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+
+
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Welcome to BlogSphere</h2>
+            <p>BlogSphere is your ultimate platform for creating, viewing, and sharing blogs. We offer a space where writers of all backgrounds can publish their thoughts, stories, and insights, while readers can discover and engage with diverse content from around the world.</p>
+        </section>
+
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>BlogSphere was created with the vision of providing a user-friendly platform for bloggers and readers alike. Our goal is to make blogging accessible and enjoyable for everyone. Since our inception, we’ve aimed to foster a vibrant community where creativity and expression are encouraged.</p>
+        </section>
+
+        <section id="what-we-offer">
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Blog Creation:</strong> Easily start your own blog with our intuitive tools.</li>
+                <li><strong>Content Management:</strong> Edit, update, and manage your posts with ease.</li>
+                <li><strong>Engaging Experience:</strong> Discover a wide range of topics and connect with other bloggers and readers.</li>
+            </ul>
+        </section>
+
+        <section id="our-values">
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Creativity:</strong> We celebrate diverse voices and innovative ideas.</li>
+                <li><strong>User Empowerment:</strong> We provide the tools and features you need to control your blogging experience.</li>
+                <li><strong>Community:</strong> We build a supportive environment where everyone can share and connect.</li>
+                <li><strong>Transparency:</strong> We operate with integrity and value your feedback.</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
+
+
+<%- include(("partials/footer.ejs")) %>

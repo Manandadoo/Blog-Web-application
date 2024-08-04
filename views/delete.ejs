@@ -1,0 +1,59 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<style>
+    .post, h1 {
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        gap: 10px;
+        margin-bottom: 20px; /* Adjust margin as needed */
+        border: 1px solid #ddd; /* Optional border */
+        padding: 10px; /* Optional padding */
+        border-radius: 5px; /* Optional rounded corners */
+        }
+    .delete-button{     
+        /* background-color: red;    */
+        font-size: larger;
+        margin-top: 15px;
+        padding: 5px 10px;
+        border-radius: 5%;
+
+    }
+</style>
+
+<body>
+    <h1>Your Published blog are as follows: </h1>
+
+    <br><br>
+
+    <% posts.forEach(function(post) { %>
+        <div class="post">
+            <h2><%= post.title %></h2>
+
+            <div class="delete">
+                <form action="/delete/<%= post.title %>" method="post">
+                    <button type="submit" class="delete-button btn btn-danger">Delete</button>
+                </form>
+            </div>
+            
+            <div class="content">
+                <%=post.content%>
+                
+            </div>
+            <br>
+        </div>
+    <% }); %>
+
+</body>  
+
+</html>
+
+<%- include("partials/footer.ejs") %>
